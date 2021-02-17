@@ -7,7 +7,7 @@ TOKEN = os.environ.get('TOKEN')
 bot = telebot.TeleBot(TOKEN)
 
 
-@bot.message_handlers(commands=['start'])
+@bot.message_handlers(commands=['start', ])
 def start(message):
     bot.reply_to(message, 'Prog.UA')
 
@@ -22,7 +22,7 @@ def help(message):
 @bot.message_handlers(commands=['courses'])
 def courses(message):
     keyboard = telebot.types.InlineKeyboardMarkup(row_width=1)
-    with open('couurses.txt', 'r') as file:
+    with open('courses.txt', 'r') as file:
         courses = [item.strip().split(',') for item in file]
 
         for title, link in courses:
