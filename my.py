@@ -15,7 +15,7 @@ def start(message):
 @bot.message_handlers(commands=['help'])
 def help(message):
     res = '/courses - список \n' \
-          '/planning - расписания'
+          '/planning - 1расписания'
     bot.reply_to(message, res)
 
 
