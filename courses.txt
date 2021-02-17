@@ -1,0 +1,3 @@
+Courses1, https://krupetska-gromada.gov.ua/news/
+Courses2, https://krupetska-gromada.gov.ua/more_news/
+
